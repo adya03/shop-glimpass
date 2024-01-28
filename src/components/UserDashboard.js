@@ -40,14 +40,13 @@ function UserDashboard() {
         <Grid item xs={12}>
           <Typography variant="h4" gutterBottom align="center">SHOP</Typography>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={11.5} sm={6}>
           <Paper elevation={3} style={{ padding: 16 }}>
             <ShopkeeperTable/>
-            <Button variant="contained" onClick={handleAddClick}>Add</Button>
             <Button variant="outlined" onClick={handleEditClick} style={{ marginLeft: 8 }}>Edit</Button>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={11.5} sm={6}>
           <Paper elevation={3} style={{ padding: 16 }}>
             <Typography variant="subtitle1" gutterBottom>View total</Typography>
             <Typography variant="h6" gutterBottom>200</Typography>

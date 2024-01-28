@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/shop-glimpass/static/css/main.4228d53d.css",
-    "main.js": "/shop-glimpass/static/js/main.2fe8564d.js",
+    "main.js": "/shop-glimpass/static/js/main.b4e36f54.js",
     "static/js/787.78da8133.chunk.js": "/shop-glimpass/static/js/787.78da8133.chunk.js",
     "static/media/logo1.svg": "/shop-glimpass/static/media/logo1.cc828637da0d544c7780adedda74f0c3.svg",
     "static/media/wallet.svg": "/shop-glimpass/static/media/wallet.1db29d10f5a7015e522ec0814fef8b6b.svg",
     "index.html": "/shop-glimpass/index.html",
     "main.4228d53d.css.map": "/shop-glimpass/static/css/main.4228d53d.css.map",
-    "main.2fe8564d.js.map": "/shop-glimpass/static/js/main.2fe8564d.js.map",
+    "main.b4e36f54.js.map": "/shop-glimpass/static/js/main.b4e36f54.js.map",
     "787.78da8133.chunk.js.map": "/shop-glimpass/static/js/787.78da8133.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4228d53d.css",
-    "static/js/main.2fe8564d.js"
+    "static/js/main.b4e36f54.js"
   ]
 }

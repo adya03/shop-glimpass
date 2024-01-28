@@ -30,8 +30,8 @@ function UserDashboard() {
     // };
 
   return (
-    <Box p={2}>
-      <Grid container spacing={2} alignItems="center">
+    <Box p={2} >
+      <Grid container spacing={3} alignItems="center">
         <Grid item xs={6} sm={4}>
           <img src={Logo} alt="Logo" style={{ width: '60%' }} />
         </Grid>
@@ -42,13 +42,13 @@ function UserDashboard() {
         <Grid item xs={12}>
           <Typography variant="h4" gutterBottom align="center">SHOP</Typography>
         </Grid>
-        <Grid item xs={11.5} sm={6}>
+        <Grid item xs={12} sm={6}>
           <Paper elevation={3} style={{ padding: 16 }}>
             <ShopkeeperTable/>
             <Button variant="outlined" onClick={handleEditClick} style={{ marginLeft: 8 }}>Edit</Button>
           </Paper>
         </Grid>
-        <Grid item xs={11.5} sm={6}>
+        <Grid item xs={12} sm={6}>
           <Button variant="contained" onClick={handleAdClick}
           style={{
             borderRadius: '50%', // Makes the border circular
@@ -58,11 +58,11 @@ function UserDashboard() {
             padding: '10px 15px', // Adjust padding as needed
             textAlign: 'center',
             lineHeight: '15px', // Adjust line height to vertically center the text
-            marginLeft: '120px',
+            marginLeft: '140px',
         }}
         >Run Ads</Button>
         </Grid>
-        <Grid item xs={11.5} sm={6}>
+        <Grid item xs={12} sm={6}>
           <Paper elevation={3} style={{ padding: 16 }}>
             <Typography variant="subtitle1" gutterBottom>View total</Typography>
             <Typography variant="h6" gutterBottom>200</Typography>

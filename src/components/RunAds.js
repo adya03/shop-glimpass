@@ -3,6 +3,7 @@ import { Box, Typography, Button, FormGroup, FormControlLabel, Switch, Paper, Gr
 import Logo from '../assets/logo1.svg'; // Replace with your actual logo path
 import Wallet from '../assets/wallet.svg';
 import { useNavigate } from 'react-router-dom';
+import '../styles/ads.css';
 // import WalletIcon from '@mui/icons-material/AccountBalanceWallet'; // This is an icon from MUI
 
 function RunAds() {
@@ -35,7 +36,7 @@ function RunAds() {
   const handleImageClick = () => navigate('/wallet');
 
   return (
-    <Paper elevation={3} sx={{ padding: 3 }}>
+    <Paper elevation={0} sx={{ padding: 3 }}>
       <Grid container alignItems="center" justifyContent="space-between">
         <Grid item xs={6} sm={4}>
           <img src={Logo} alt="Logo" style={{ width: '60%' }} />
@@ -51,48 +52,51 @@ function RunAds() {
       <Box my={2} textAlign="center">
         {imagePreview && (
           <Box mb={2}>
-            <img src={imagePreview} alt="Preview" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src={imagePreview} alt="Preview" style={{ maxWidth: '50%', height: 'auto' }} />
           </Box>
         )}
-        <Button variant="contained" component="label">
+        <Button variant="contained" sx={{backgroundColor: '#121858'}} component="label">
           Choose file
           <input type="file" hidden onChange={handleFileChange} accept="image/*" />
         </Button>
       </Box>
       
-      <FormGroup>
-      <Typography variant="h6" gutterBottom align='center'>
+      <Typography variant="h6" gutterBottom align='center' sx={{ mt: 7 }}>
         Run Ads on these platforms
       </Typography>
-      
+      <Box border={3} borderColor="grey.300" borderRadius={4} p={2} my={2}>
+      <FormGroup>
       <Grid container spacing={1} alignItems="center">
-      <Grid item xs={6}>
+      <Grid item xs={3}>
           <Typography>Glimpass</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Switch checked={isGlimpassActive} onChange={handleGlimpassToggle} />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Typography>Instagram</Typography>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Switch checked={isInstagramActive} onChange={handleInstagramToggle} />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Typography>Facebook</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Switch checked={isFacebookActive} onChange={handleFacebookToggle} />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Typography>Google</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Switch checked={isGoogleActive} onChange={handleGoogleToggle} />
         </Grid>
+        
       </Grid>
     </FormGroup>
+    </Box>
+    <Button variant="contained" sx={{backgroundColor: '#121858'}} >Run Advertisement</Button>
     </Paper>
   );
 }

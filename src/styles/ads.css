@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }

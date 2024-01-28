@@ -1,35 +1,62 @@
-/* user.css */
+/* userDashboard.css */
+/* Mobile-first styles */
 
-/* General styles */
-.image-container {
-    text-align: center; /* Center images */
+/* Ensure that the wallet and logo images are not too big on smaller screens */
+.logo, .wallet {
+  width: 60%; /* Adjust if needed for smaller screens */
+}
+
+/* Set a max-width to prevent the images from being too large on bigger screens */
+@media (min-width: 600px) {
+  .logo, .wallet {
+    width: 20%; /* Adjust if needed for larger screens */
   }
-  
-  .logoicon, .walletIcon {
-    max-width: 100%; /* Ensure images are not bigger than their containers */
-    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the position of the 'Run Ads' button to be centered */
+.run-ads-btn {
+  width: 90px; /* Fixed width */
+  height: 56px; /* Fixed height to match the width for a circular shape */
+  min-width: 56px; /* Minimum width */
+  border-radius: 50%; /* Circular shape */
+  padding: 10px 15px; /* Padding */
+  text-align: center; /* Center text */
+  line-height: 15px; /* Center line */
+}
+
+/* Center the button inside the grid on larger screens */
+@media (min-width: 600px) {
+  .run-ads-btn-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0;
   }
-  
-  /* Styles for mobile devices */
-  @media (max-width: 768px) {
-    .user-dashboard {
-      padding: 10px;
-      text-align: center; /* Center aligning for better mobile view */
-    }
-  
-    .logoicon, .walletIcon {
-      width: 50%; /* Smaller logos for mobile */
-    }
+}
+
+/* Use flexbox to position the edit and view buttons */
+.edit-view-btn {
+  display: flex;
+  justify-content: flex-end; /* Align to the right on larger screens */
+  padding: 16px; /* Padding */
+}
+
+/* Ensure proper spacing and alignment of Paper components */
+.paper-container {
+  padding: 16px; /* Padding */
+  margin-bottom: 16px; /* Spacing between paper components */
+}
+
+/* Responsive typography */
+@media (min-width: 600px) {
+  .shop-title {
+    font-size: 1.5rem; /* Larger text on larger screens */
   }
-  
-  /* Styles for tablets and desktop */
-  @media (min-width: 769px) {
-    .user-dashboard {
-      padding: 20px;
-    }
-  
-    .logoicon, .walletIcon {
-      width: 15%; /* Larger logos for desktop, adjust as needed */
-    }
+}
+
+/* Adjust the grid spacing for larger screens */
+@media (min-width: 600px) {
+  .grid-container {
+    grid-gap: 32px; /* Larger gap on larger screens */
   }
-  
+}

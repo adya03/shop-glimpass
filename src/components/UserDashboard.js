@@ -11,6 +11,7 @@ function UserDashboard() {
   const handleAddClick = () => console.log('Add Clicked');
   const handleEditClick = () => console.log('Edit Clicked');
   const handleViewClick = () => console.log('View Clicked');
+  
   const navigate = useNavigate();
 
     // const navigate = useNavigate();
@@ -18,6 +19,7 @@ function UserDashboard() {
     // const [showTable, setShowTable] = useState(false);
   
     const handleImageClick = () => navigate('/wallet');
+    const handleAdClick = () => navigate('/runAds');
     // const handleGraphButtonClick = () => {
     //   setShowGraph(prevShowGraph => !prevShowGraph);
     //   setShowTable(false); // Hide table when showing graph
@@ -45,6 +47,20 @@ function UserDashboard() {
             <ShopkeeperTable/>
             <Button variant="outlined" onClick={handleEditClick} style={{ marginLeft: 8 }}>Edit</Button>
           </Paper>
+        </Grid>
+        <Grid item xs={11.5} sm={6}>
+          <Button variant="contained" onClick={handleAdClick}
+          style={{
+            borderRadius: '50%', // Makes the border circular
+            width: 90, // Width of the button (you can adjust this)
+            height: 56, // Height of the button (must be the same as width for a circle)
+            minWidth: 56, // Ensures the button is at least a circle
+            padding: '10px 15px', // Adjust padding as needed
+            textAlign: 'center',
+            lineHeight: '15px', // Adjust line height to vertically center the text
+            marginLeft: '120px',
+        }}
+        >Run Ads</Button>
         </Grid>
         <Grid item xs={11.5} sm={6}>
           <Paper elevation={3} style={{ padding: 16 }}>

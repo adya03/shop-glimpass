@@ -5,6 +5,7 @@ import Registration from './components/Registration';
 import UserDashboard from './components/UserDashboard';
 import Wallet from './components/Wallet';
 import FootfallGraph from './components/FootfallGraph';
+import RunAds from './components/RunAds';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/dashboard" element={<UserDashboard />} />
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/graph" element={<FootfallGraph />} />
+        <Route path="/runAds" element={<RunAds />} />
       </Routes>
     </Router>
   );

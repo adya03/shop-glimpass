@@ -1,0 +1,35 @@
+{
+    "data": [
+      {"date": "2023-09-01", "footfall": 200},
+      {"date": "2023-09-02", "footfall": 150},
+      {"date": "2023-09-03", "footfall": 175},
+      {"date": "2023-09-04", "footfall": 225},
+      {"date": "2023-09-05", "footfall": 210},
+      {"date": "2023-09-06", "footfall": 230},
+      {"date": "2023-09-07", "footfall": 195},
+      {"date": "2023-09-08", "footfall": 210},
+      {"date": "2023-09-09", "footfall": 250},
+      {"date": "2023-09-10", "footfall": 220},
+      {"date": "2023-09-11", "footfall": 205},
+      {"date": "2023-09-12", "footfall": 215},
+      {"date": "2023-09-13", "footfall": 200},
+      {"date": "2023-09-14", "footfall": 180},
+      {"date": "2023-09-15", "footfall": 235},
+      {"date": "2023-09-16", "footfall": 255},
+      {"date": "2023-09-17", "footfall": 240},
+      {"date": "2023-09-18", "footfall": 210},
+      {"date": "2023-09-19", "footfall": 225},
+      {"date": "2023-09-20", "footfall": 230},
+      {"date": "2023-09-21", "footfall": 245},
+      {"date": "2023-09-22", "footfall": 220},
+      {"date": "2023-09-23", "footfall": 235},
+      {"date": "2023-09-24", "footfall": 240},
+      {"date": "2023-09-25", "footfall": 250},
+      {"date": "2023-09-26", "footfall": 260},
+      {"date": "2023-09-27", "footfall": 275},
+      {"date": "2023-09-28", "footfall": 280},
+      {"date": "2023-09-29", "footfall": 295},
+      {"date": "2023-09-30", "footfall": 300}
+    ]
+  }
+  

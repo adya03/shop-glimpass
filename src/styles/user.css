@@ -1,0 +1,35 @@
+/* user.css */
+
+/* General styles */
+.image-container {
+    text-align: center; /* Center images */
+  }
+  
+  .logoicon, .walletIcon {
+    max-width: 100%; /* Ensure images are not bigger than their containers */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 768px) {
+    .user-dashboard {
+      padding: 10px;
+      text-align: center; /* Center aligning for better mobile view */
+    }
+  
+    .logoicon, .walletIcon {
+      width: 50%; /* Smaller logos for mobile */
+    }
+  }
+  
+  /* Styles for tablets and desktop */
+  @media (min-width: 769px) {
+    .user-dashboard {
+      padding: 20px;
+    }
+  
+    .logoicon, .walletIcon {
+      width: 15%; /* Larger logos for desktop, adjust as needed */
+    }
+  }
+  

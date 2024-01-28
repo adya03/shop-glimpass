@@ -1,0 +1,15 @@
+/* FootfallGraph.css */
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    margin-top: 70px;
+}
+
+/* Make chart container full width on smaller screens */
+@media (max-width: 600px) {
+    .chart-container {
+        height: auto;
+    }
+}
